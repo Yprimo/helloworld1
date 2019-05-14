@@ -10,18 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.helloworld.HelloWorldActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/kaishihecheng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!52633456674265" />
-    <TextView
-        android:layout_width="match_parent"
+        android:text="开始合成"/>
+    <Button
+        android:id="@+id/kaishishibie"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="yk"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="hi kitchen"/>
+        android:layout_below="@+id/kaishihecheng"
+        android:text="开始识别"/>
+    <Button
+        android:id="@+id/jieshushibie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kaishishibie"
+        android:text="结束识别"/>
+    <Button
+        android:id="@+id/jieshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jieshushibie"
+        android:text="精简识别"/>
 </RelativeLayout>
